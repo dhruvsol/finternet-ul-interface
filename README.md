@@ -14,10 +14,11 @@ Finternet UL Interface provides a standardized set of interfaces and traits for 
 
 ```
 ├── src/
-│   ├── interfaces/    # Core interface definitions
-│   ├── traits/        # Shared traits
-│   └── types/         # Common type definitions
-├── examples/          # Implementation examples
-├── tests/            # Test suite
-└── docs/     # Documentation
+│   ├── key/                  # Core interface for key
+│   │   ├── ul_key.rs        # Key specs for the native key for the UL
+│   │   ├── unique_key.rs    # Specs for the global finternet Keys
+│   │   └── resolver.rs      # Specs for a module for resolving ul_key to unique_key and vice versa
+│   │
+│   └── storage/             # Core interface for storage
+
 ```
